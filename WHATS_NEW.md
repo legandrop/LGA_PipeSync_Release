@@ -1,6 +1,10 @@
 # What's new in LGA PipeSync
 
-## v1.015 (2026-10-02)
+## v1.016
+
+- **Fixed:** When giving an artist Wasabi access failed halfway, the next task assignment or Wasabi policy sync now finishes it instead of leaving them without access to the shot. (Studio only)
+
+## v1.015
 
 - **New:** The update window now shows what's new before you install, and after an update you didn't see the app shows it once when it starts.
 - **New:** In the Tools tab, each tool with an update in LGA Updates has a What's new button next to Update with its changes, Update All ends with a summary of what changed, and the startup notice about available updates says what's new in each tool.
