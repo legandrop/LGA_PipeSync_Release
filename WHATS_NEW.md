@@ -1,6 +1,23 @@
 # What's new in LGA PipeSync
 
-## v1.018 (2026-10-13)
+## v1.019 (2026-10-14)
+
+- **New:** Log time supports repeated meetings and other activities with project selection and optional notes, plus supervision entries for reviewers; time fields accept combinations such as 8h 30m and 1d 4h. (Studio only)
+- **New:** Shot assignee editors: Right-click an assignee in a Shot Card to edit the task's assignees and Watchers directly, using the same editor as PROD. (Studio only)
+- **New:** Shot assignee editors: Right-click an assignee in a Shot Card to edit the task's assignees and Watchers directly, using the same editor as PROD. (Client only)
+- **Improved:** Gantt planners: When some tasks changed in Flow after you moved them, Apply lists each one with what changed and lets you apply the rest, keeping those as temporary changes. (Studio only)
+- **Improved:** Gantt planners: When some tasks changed in Flow after you moved them, Apply lists each one with what changed and lets you apply the rest, keeping those as temporary changes. (Client only)
+- **Improved:** Log time now lists open shots with their current status for today's entries and lets you edit, move or remove earlier records before saving all changes together. (Studio only)
+- **Improved:** Producers: The team hours summary compares this week and last week with explicit dates, logged and missing time, and daily details; totals over eight hours use workdays. (Studio only)
+- **Improved:** Assignee editors: Viewer is now called Watcher. Removing an assignee also clears Watcher; assigning the person again keeps Watcher off until you explicitly select it. (Studio only)
+- **Improved:** Assignee editors: Viewer is now called Watcher. Removing an assignee also clears Watcher; assigning the person again keeps Watcher off until you explicitly select it. (Client only)
+- **Fixed:** Automatic updates install the new version again; before, PipeSync closed and reopened the version you already had. (macOS only)
+- **Fixed:** Gantt planners: Apply no longer stops with an expected-values conflict when the batch moves tasks that are linked by dependencies in Flow. (Studio only)
+- **Fixed:** Gantt planners: Apply no longer stops with an expected-values conflict when the batch moves tasks that are linked by dependencies in Flow. (Client only)
+- **Fixed:** Gantt planners: After applying a planning proposal, the Gantt stays on the same dates instead of jumping elsewhere in the timeline. (Studio only)
+- **Fixed:** Gantt planners: After applying a planning proposal, the Gantt stays on the same dates instead of jumping elsewhere in the timeline. (Client only)
+
+## v1.018
 
 - **New:** Assignee editors: Mark an assigned person as a Viewer to keep their access while identifying who is responsible for the task. (Studio only)
 - **New:** Assignee editors: Mark an assigned person as a Viewer to keep their access while identifying who is responsible for the task. (Client only)
