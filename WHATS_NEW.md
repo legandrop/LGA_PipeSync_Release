@@ -1,6 +1,14 @@
 # What's new in LGA PipeSync
 
-## v1.019 (2026-10-14)
+## v1.020
+
+- **New:** Admins: you can download a shot's review versions from Flow straight from the Review tab. The window comes with only the latest version selected, Shift+Click downloads the latest version without opening it, and the row updates when the download ends. (Studio only)
+- **New:** If Settings shows you NKS auto download but not NKS auto upload, you now also get an Upload Now button next to the NKS Download Now button, so you can send your NKS folders to Wasabi right away.
+- **Improved:** In Log time, today now has two tabs: one to add time to your shots and general activities, and "Registrado hoy" to review and correct everything you already logged today in a full list. Clicking a shot's logged time takes you to its entries. (Studio only)
+- **Improved:** Admins: Downloading versions from Flow now selects only the latest version, Shift+Click downloads it without opening the window, and the row updates when the download ends. (Client only)
+- **Fixed:** The Log time window no longer appears inside a second dark panel; it opens as a single window. (Studio, macOS only)
+
+## v1.019
 
 - **New:** Log time supports repeated meetings and other activities with project selection and optional notes, plus supervision entries for reviewers; time fields accept combinations such as 8h 30m and 1d 4h. (Studio only)
 - **New:** Shot assignee editors: Right-click an assignee in a Shot Card to edit the task's assignees and Watchers directly, using the same editor as PROD. (Studio only)
