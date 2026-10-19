@@ -1,5 +1,20 @@
 # What's new in LGA PipeSync
 
+## v1.022 (2026-10-18)
+
+- **New:** everyone now has the INBOX: your own to-do list, and the status changes of the tasks you are assigned to or watching. FOR YOU marks a task of yours that was sent to Corrections. (Studio only)
+- **New:** everyone now has the INBOX: your own to-do list, and the status changes of every task in your projects. (Client only)
+- **New:** Producers and admins: you can download a task's versions from Flow, or only the latest one, from the Prod tab's right-click menu. (Studio only)
+- **New:** you can download a task's versions from Flow, or only the latest one, from the Prod tab's right-click menu. (Client only)
+- **New:** Producers: you can download a shot's review versions from Flow from the Review tab, as admins already could. (Studio only)
+- **New:** everyone can now download a shot's review versions from Flow, not only admins. (Client only)
+- **New:** Gantt planners: the local planning assistant can work with several projects at once: review and capture an artist's schedule across two, three or all active projects, and prepare one proposal that moves tasks from different projects, shown together in your Gantt before you apply it. (Studio only)
+- **New:** Gantt planners: the local planning assistant can work with several projects at once: review and capture an artist's schedule across two, three or all active projects, and prepare one proposal that moves tasks from different projects, shown together in your Gantt before you apply it. (Client only)
+- **Improved:** the Prod tab's right-click menu uses color to show where each option takes you (Flow, NukeStudio, FileManagerS3) and which options mark or delete things.
+- **Improved:** tasks are now assigned to the vendor's group instead of individual people, so anyone in that vendor can change their status in Flow. The assignee editors, Create task and the BID import offer the vendor's group. (Client only)
+- **Improved:** Gantt planners: the Gantt shows one row per vendor, and dragging a task to a vendor's row assigns it to that vendor's group. (Client only)
+- **Improved:** Project managers: Users & Access no longer saves an active vendor user without a Vendor Group, and the vendor audit lists the ones that have none. (Client only)
+
 ## v1.020
 
 - **New:** Admins: you can download a shot's review versions from Flow straight from the Review tab. The window comes with only the latest version selected, Shift+Click downloads the latest version without opening it, and the row updates when the download ends. (Studio only)
