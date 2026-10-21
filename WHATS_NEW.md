@@ -1,6 +1,17 @@
 # What's new in LGA PipeSync
 
-## v1.022 (2026-10-18)
+## v1.023 (2026-10-20)
+
+- **New:** Gantt readers: en el tab GANTT podés guardar la combinación de filtros como un preset con nombre y volver a ella con un click; si después cambiás algún filtro, el control lo marca y te deja actualizar el preset o volver a como estaba. (Studio only)
+- **New:** Gantt readers: en el tab GANTT podés guardar la combinación de filtros como un preset con nombre y volver a ella con un click; si después cambiás algún filtro, el control lo marca y te deja actualizar el preset o volver a como estaba. (Client only)
+- **Improved:** Shots users: al subir una versión ya no hay que tildar nada para que cuenten las horas que cargaste hoy en esa task: la ventana te avisa cuántas son y se suman solas a la versión. (Studio only)
+- **Improved:** el tab ACTIVITY ahora se llama QUEUE: es el mismo de siempre, con las subidas y descargas a Wasabi.
+- **Improved:** los botones de arriba a la derecha cambian de orden: PROD va antes que PLAYLIST, STATS a la derecha de GANTT y TOOLS antes que PROJECTS; Ctrl+Alt+flechas los recorre en ese mismo orden.
+- **Improved:** el tab PLAYLIST muestra su título arriba a la izquierda, como PROD.
+- **Improved:** en GANTT, PROD, SHOTS, REVIEW, PLAYLIST y STATS, un combo de filtro que esconde algo (un solo proyecto, algunas secuencias, un assignee) se pinta de rojo para que se note, y sin filtro dice «All projects», «All sequences» o «All assignees».
+- **Fixed:** en el tab GANTT, los filtros vuelven a ir alineados a la derecha de la barra en vez de quedar pegados a Today.
+
+## v1.022
 
 - **New:** everyone now has the INBOX: your own to-do list, and the status changes of the tasks you are assigned to or watching. FOR YOU marks a task of yours that was sent to Corrections. (Studio only)
 - **New:** everyone now has the INBOX: your own to-do list, and the status changes of every task in your projects. (Client only)
