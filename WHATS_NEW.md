@@ -1,9 +1,14 @@
 # What's new in LGA PipeSync
 
-## v1.025 (2026-10-26)
+## v1.026 (2026-10-26)
+
+- **Improved:** al subir un MXF de ERSO a Flow, el chequeo de la especificación de entrega pide ahora DNxHR SQ, el codec nuevo del proyecto, en vez de DNxHD SQ. (Windows only)
+- **Improved:** Slate users: Slate MXF puede agregar el slate a los MXF en DNxHR SQ, el codec nuevo de entrega de ERSO. (Studio, Windows only)
+- **Fixed:** si en Flow se renombra un shot o se intercambian los nombres de dos shots, la card de cada uno ya no muestra las tasks, las versiones y la descripción del otro, y Shift+click en el nombre lleva al shot correcto; los que ya estaban cruzados se corrigen con Clean Local Cache o solos después de unas sincronizaciones.
+
+## v1.025
 
 - **New:** en HELP > Guided tours está «PipeSync para artistas»: un recorrido de unos 10 minutos sobre un proyecto de práctica que muestra cómo bajar un shot, abrirlo en Nuke, subir el trabajo, mandar el review a Flow y cargar las horas, sin tocar tus proyectos. (Studio only)
-- **Fixed:** si en Flow se intercambian los nombres de dos shots, la card de cada uno ya no muestra las tasks, las versiones y la descripción del otro, y Shift+click en el nombre lleva al shot correcto.
 - **Fixed:** ya se puede asignar a una task a personas con tilde en el nombre (por ejemplo, Starópoli); antes fallaba con «no se encontraron estos usuarios». (macOS only)
 - **Fixed:** el editor de Assignees muestra tildado a quien ya está asignado aunque todavía no figure como assignable, así que guardar ya no lo saca de la task sin querer.
 
