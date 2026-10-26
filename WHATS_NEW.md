@@ -1,6 +1,22 @@
 # What's new in LGA PipeSync
 
-## v1.023 (2026-10-20)
+## v1.025 (2026-10-26)
+
+- **New:** en HELP > Guided tours está «PipeSync para artistas»: un recorrido de unos 10 minutos sobre un proyecto de práctica que muestra cómo bajar un shot, abrirlo en Nuke, subir el trabajo, mandar el review a Flow y cargar las horas, sin tocar tus proyectos. (Studio only)
+- **Fixed:** si en Flow se intercambian los nombres de dos shots, la card de cada uno ya no muestra las tasks, las versiones y la descripción del otro, y Shift+click en el nombre lleva al shot correcto.
+- **Fixed:** ya se puede asignar a una task a personas con tilde en el nombre (por ejemplo, Starópoli); antes fallaba con «no se encontraron estos usuarios». (macOS only)
+- **Fixed:** el editor de Assignees muestra tildado a quien ya está asignado aunque todavía no figure como assignable, así que guardar ya no lo saca de la task sin querer.
+
+## v1.024
+
+- **New:** en el menú de click derecho del tab PROD, Show task in Explorer (Finder en Mac) abre la carpeta de esa task en tu computadora; si todavía no existe, te ofrece abrir la carpeta más cercana que sí está.
+- **Improved:** en Mis horas, si Flow no te deja quitar o corregir un registro, el aviso dice que es por tu permiso y que lo pidas a producción, en vez de pedirte que revises si se guardó.
+- **Improved:** el botón Download del Media Manager de Nuke pregunta si saltear o pisar los archivos que ya tenés en disco, en vez de pisarlos.
+- **Fixed:** la sincronización con Flow ya no falla cuando alguien cambia Assigned To desde la web de Flow y deja como Watcher a una persona que ya no está asignada; si podés editar asignados, un aviso te explica qué pasó y te ofrece Fix in Flow para corregirlo.
+- **Fixed:** Project managers: en Users & Access se vuelve a poder guardar a un freelancer activo con permiso Vendor (por ejemplo, para que aparezca en los assignees), sin que Flow pida un Vendor Group. (Studio only)
+- **Fixed:** después de subir un review a Flow, la columna Local de la card ya no se queda en «...»: muestra las versiones sin tener que apretar Refresh.
+
+## v1.023
 
 - **New:** Gantt readers: en el tab GANTT podés guardar la combinación de filtros como un preset con nombre y volver a ella con un click; si después cambiás algún filtro, el control lo marca y te deja actualizar el preset o volver a como estaba. (Studio only)
 - **New:** Gantt readers: en el tab GANTT podés guardar la combinación de filtros como un preset con nombre y volver a ella con un click; si después cambiás algún filtro, el control lo marca y te deja actualizar el preset o volver a como estaba. (Client only)
