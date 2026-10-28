@@ -1,6 +1,20 @@
 # What's new in LGA PipeSync
 
-## v1.026 (2026-10-26)
+## v1.027 (2026-10-28)
+
+- **New:** Reviewers: en Mis horas, la sección de supervisión suma la opción R&D para cargar el tiempo de investigación y desarrollo aparte de la supervisión. (Studio only)
+- **Improved:** Project managers: en Import BID podés sumar todas las columnas de descripción que necesites con «Agregar descripción»; antes eran tres como máximo. (Studio only)
+- **Improved:** Project managers: en Import BID podés sumar todas las columnas de descripción que necesites con «Agregar descripción»; antes eran tres como máximo. (Client only)
+- **Improved:** Assignee editors: en el editor de Assignees cada persona va como Assignee o como Watcher, nunca las dos: hay una columna para cada uno y marcar una casilla desmarca la otra. (Studio only)
+- **Improved:** Producers and coordinators: en PROJECTS > Users & Access ya podés dar de alta una persona con Create user; antes lo podía hacer sólo un Master. La persona se crea desactivada y la activás desde su ficha. (Studio only)
+- **Fixed:** Gantt planners: el asistente del Gantt ya puede mostrar el antes y después de un cambio de hasta 20 tasks de una vez, tengan fechas o no; antes fallaba con más de dos tasks sin fecha, y partir el cambio en tandas no servía. (Studio only)
+- **Fixed:** Gantt planners: el asistente del Gantt ya puede mostrar el antes y después de un cambio de hasta 20 tasks de una vez, tengan fechas o no; antes fallaba con más de dos tasks sin fecha, y partir el cambio en tandas no servía. (Client only)
+- **Fixed:** el recorrido guiado para artistas ya no se traba en el paso de instalar LGA Mighty Tools. (macOS only)
+- **Fixed:** en el recorrido guiado para artistas, saltear un capítulo, volver a uno que ya hiciste o apretar de nuevo el botón de NukeX ya no traba el recorrido, y lo que explica cada subida espera a que lo leas en vez de pasar solo. (Studio only)
+- **Fixed:** en QUEUE, el ETA ya no aparece cortado mientras se calcula: muestra --:-- hasta tener velocidad, y Stalled si la transferencia se frena.
+- **Fixed:** Assignee editors: al guardar los asignados en PROD, la celda Assignees ya no muestra a los Watchers como si fueran asignados. (Studio only)
+
+## v1.026
 
 - **Improved:** al subir un MXF de ERSO a Flow, el chequeo de la especificación de entrega pide ahora DNxHR SQ, el codec nuevo del proyecto, en vez de DNxHD SQ. (Windows only)
 - **Improved:** Slate users: Slate MXF puede agregar el slate a los MXF en DNxHR SQ, el codec nuevo de entrega de ERSO. (Studio, Windows only)
