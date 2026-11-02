@@ -1,6 +1,17 @@
 # What's new in LGA PipeSync
 
-## v1.027 (2026-10-28)
+## v1.028 (2026-11-02)
+
+- **New:** 3D reviewers: en las tasks de 3D podés bajar lo último sin pasar por FileManager: el botón junto a Publish baja la última versión publicada a la carpeta de la task (Shift+Click para elegir otra carpeta), y en el tab REVIEW el botón de descarga junto a MOV Review baja versiones de Flow. (Studio only)
+- **New:** Producers, coordinators and admins: podés asignarle tasks a alguien que todavía está desactivado en Flow, por ejemplo quien arranca en unos días: en PROJECTS > Users & Access, en su ficha, tildá Also while disabled in Flow y aparece en la lista de assignees sin ocupar un asiento. Los demás desactivados siguen sin aparecer. (Studio only)
+- **New:** Admins and producers: cuando cambia una playlist (una playlist nueva, una versión subida, un comentario del cliente, una aprobación) aparece un aviso abajo a la derecha que queda fijo hasta que lo cerrás; los cambios siguientes se suman al mismo aviso, y un click en una playlist la abre. (Studio only)
+- **New:** Admins and producers: cuando cambia una playlist (una playlist nueva, una versión subida, un comentario del cliente, una aprobación) aparece un aviso abajo a la derecha que queda fijo hasta que lo cerrás; los cambios siguientes se suman al mismo aviso, y un click en una playlist la abre. (Client only)
+- **Improved:** los errores aparecen en una sola ventana con Show Details y Copy, que no traba el resto de la app y se cierra cuando quieras; si el sync falla en varias partes a la vez, todo queda en esa misma ventana.
+- **Improved:** Producers, coordinators and admins: si Flow bloqueó la cuenta de alguien, guardar a esa persona activa en PROJECTS > Users & Access la desbloquea. (Studio only)
+- **Fixed:** si Flow rechaza tu login (por ejemplo, porque tu cuenta todavía está deshabilitada), PipeSync deja de intentar solo y te explica qué pasa y a quién pedírselo; antes, abrir la app varias veces podía dejarte la cuenta de Flow bloqueada.
+- **Fixed:** Producers, coordinators and admins: al crear una task de 3D (Match Move, Model, Lighting…) desde el tab PROD, o con Create folders in Wasabi, la carpeta en Wasabi vuelve a llamarse 3D con D mayúscula; antes se creaba 3d. Si el shot ya tiene una carpeta 3d, se sigue usando esa. (Studio only)
+
+## v1.027
 
 - **New:** Reviewers: en Mis horas, la sección de supervisión suma la opción R&D para cargar el tiempo de investigación y desarrollo aparte de la supervisión. (Studio only)
 - **Improved:** Project managers: en Import BID podés sumar todas las columnas de descripción que necesites con «Agregar descripción»; antes eran tres como máximo. (Studio only)
