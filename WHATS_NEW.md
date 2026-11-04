@@ -1,6 +1,26 @@
 # What's new in LGA PipeSync
 
-## v1.028 (2026-11-02)
+## v1.029 (2026-11-03)
+
+- **New:** En las tarjetas de shots, un click en la descripción de una task la abre completa en una ventana aparte que podés mover, leer mientras trabajás y copiar.
+- **New:** Reviewers: en el tab REVIEW, cada task tiene un botón de descarga junto a EXR Publish (o Publish): un click baja la última versión publicada a la carpeta de la task, y Shift+Click abre la lista de versiones para elegir cuáles bajar. (Studio only)
+- **Improved:** El recorrido guiado para artistas muestra dónde está la descripción de la task y cómo abrirla completa con un click. (Studio only)
+- **Improved:** el recorrido guiado para artistas explica cómo cargar en Mis horas lo que no es de un shot, como la reunión de inducción o instalar tus herramientas el primer día. (Studio only)
+- **Improved:** Team time users: en el Registro del equipo, Enter cierra la ventana; para ir a Stats está el botón Abrir Stats. (Studio only)
+- **Improved:** Team time users: al agrandar la ventana del Registro del equipo, el espacio extra muestra más personas de la tabla en vez de separar los textos. (Studio only)
+- **Improved:** 3D reviewers: en las tasks de 3D, Shift+Click en el botón de descarga de Publish abre la lista de versiones para elegir cuáles bajar; antes servía para elegir otra carpeta. (Studio only)
+- **Improved:** Admins, producers and 3d reviewers: el botón de descarga junto a MOV Review baja la última versión de Flow con un click; para elegir entre todas las versiones, Shift+Click. (Studio only)
+- **Improved:** Admins and producers: el botón de descarga junto a MOV Review baja la última versión de Flow con un click; para elegir entre todas las versiones, Shift+Click. (Client only)
+- **Improved:** Assignee editors: en el editor de Assignees podés dejar una task solo con Watchers, sin ningún Assignee, por ejemplo para que la sigan mientras se decide a quién dársela. (Studio only)
+- **Improved:** Assignee editors: en el editor de Assignees podés dejar una task solo con Watchers, sin ningún Assignee, por ejemplo para que la sigan mientras se decide a quién dársela. (Client only)
+- **Improved:** Reviewers: si sos Watcher de una task, el shot te aparece en REVIEW y no en SHOTS, salvo que tengas otra task asignada en ese shot. (Studio only)
+- **Improved:** Reviewers: si sos Watcher de una task, el shot te aparece en REVIEW y no en SHOTS, salvo que tengas otra task asignada en ese shot. (Client only)
+- **Fixed:** Admins and producers: el aviso de cambios en las playlists aparece encima sin traer PipeSync al frente, así que no te interrumpe lo que estás haciendo en otra app. (Studio, macOS only)
+- **Fixed:** Admins and producers: el aviso de cambios en las playlists aparece encima sin traer PipeSync al frente, así que no te interrumpe lo que estás haciendo en otra app. (Client, macOS only)
+- **Fixed:** Assignee editors: al asignar a alguien desde un shot, el acceso al material en Wasabi se le da aunque cierres el editor enseguida; antes podía quedar asignado sin poder bajar nada. (Studio only)
+- **Fixed:** Production managers: Rename shot ya no se traba cuando el material del shot ya se había subido con el nombre nuevo: si la carpeta con el nombre viejo está vacía, el shot pasa a usar la que ya tiene el nombre correcto, sin mover nada. (Studio only)
+
+## v1.028
 
 - **New:** 3D reviewers: en las tasks de 3D podés bajar lo último sin pasar por FileManager: el botón junto a Publish baja la última versión publicada a la carpeta de la task (Shift+Click para elegir otra carpeta), y en el tab REVIEW el botón de descarga junto a MOV Review baja versiones de Flow. (Studio only)
 - **New:** Producers, coordinators and admins: podés asignarle tasks a alguien que todavía está desactivado en Flow, por ejemplo quien arranca en unos días: en PROJECTS > Users & Access, en su ficha, tildá Also while disabled in Flow y aparece en la lista de assignees sin ocupar un asiento. Los demás desactivados siguen sin aparecer. (Studio only)
