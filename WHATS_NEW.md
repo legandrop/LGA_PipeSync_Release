@@ -1,6 +1,46 @@
 # What's new in LGA PipeSync
 
-## v1.029 (2026-11-03)
+## v1.030 (2026-11-17)
+
+- **New:** Tools users: en LGA Updates del tab TOOLS aparece LGA GateBouncer, el firewall de LGA para Windows: lo instalás y lo actualizás desde ahí. (Studio, Windows only)
+- **New:** Tools users: en LGA Updates del tab TOOLS aparece LGA GateBouncer, el firewall de LGA para Windows: lo instalás y lo actualizás desde ahí. (Client, Windows only)
+- **New:** Reviewers, coordinators, producers and admins: en los proyectos que tienen Shot Docs, la tarjeta de cada shot suma un botón que abre su escena en Shot Docs (en la app de Shot Docs si la tenés instalada en la Mac), y el menú del click derecho de PROD e INBOX trae Show scene in Shot Docs y Copy Shot Docs link. (Studio only)
+- **New:** Admins: en el tab PROJECTS, la columna Shot Docs prende el link de cada proyecto y guarda cómo se llama allá. (Studio only)
+- **New:** Production editors: en el tab PROD podés deshacer y rehacer los últimos tres cambios de la tabla con Ctrl+Z y Ctrl+Shift+Z (Cmd en la Mac) o con los dos botones nuevos del toolbar; si alguien cambió ese mismo valor después, esa fila no se toca y te avisa cuál. (Studio only)
+- **New:** Production editors: en el tab PROD podés deshacer y rehacer los últimos tres cambios de la tabla con Ctrl+Z y Ctrl+Shift+Z (Cmd en la Mac) o con los dos botones nuevos del toolbar; si alguien cambió ese mismo valor después, esa fila no se toca y te avisa cuál. (Client only)
+- **New:** Production managers: en el tab PROD, Ctrl+Z también deshace Create task, Delete task y Delete shot: lo que borraste vuelve con sus versiones, notas y horas, y una task recién creada se retira. (Studio only)
+- **New:** Production managers: en el tab PROD, Ctrl+Z también deshace Create task y Delete task: lo que borraste vuelve con sus versiones, notas y horas, y una task recién creada se retira. (Client only)
+- **New:** Shots users: en las tarjetas de shots, cada botón de descarga o subida muestra su avance mientras trabaja, en vez de llevarte al tab QUEUE, y los que usarían la misma carpeta quedan apagados hasta que termina; al pasar el mouse te dicen qué se está haciendo y desde dónde. (Studio only)
+- **New:** Shots users: en las tarjetas de shots, cada botón de descarga o subida muestra su avance mientras trabaja, en vez de llevarte al tab QUEUE, y los que usarían la misma carpeta quedan apagados hasta que termina; al pasar el mouse te dicen qué se está haciendo y desde dónde. (Client only)
+- **Improved:** Slate users: Slate MXF suma un selector Status al lado de Project: además de las tasks en Review Dir podés listar las de cualquier otro status y armarles el slate sin cambiarlas de status, y lo que dejás tildado queda en la lista al cambiar de status o de proyecto, así un envío junta shots de varios status. (Studio, Windows only)
+- **Improved:** el DMG viene firmado y verificado por Apple: la app se abre sin pasar por la Terminal. Por el cambio de firma, macOS te va a volver a pedir una sola vez los permisos que ya le habías dado (carpetas, Finder, notificaciones). (macOS only)
+- **Improved:** Tools users: LGA GateBouncer y LGA Mighty Tools, que tienen la interfaz en inglés y en castellano, se instalan desde LGA Updates ya en castellano, y Mighty Tools pasa a castellano la próxima vez que la actualizás desde ahí; el idioma se sigue cambiando en cada app. (Studio only)
+- **Improved:** Tools users: LGA GateBouncer y LGA Mighty Tools, que tienen la interfaz en inglés y en castellano, se instalan desde LGA Updates ya en castellano, y Mighty Tools pasa a castellano la próxima vez que la actualizás desde ahí; el idioma se sigue cambiando en cada app. (Client only)
+- **Improved:** cuando cambiás el estado de una task con los botones de Push en Nuke Studio, PipeSync abierto lo muestra al instante en SHOTS, REVIEW, PROD y GANTT, sin esperar al próximo sync.
+- **Improved:** Ctrl+F (Cmd+F en la Mac) te lleva al buscador del tab que estás viendo; Esc borra la búsqueda y sale del buscador, y Enter sale y la deja aplicada. En GANTT, Ctrl+F abre Search Task.
+- **Improved:** Shots users: las versiones de la tarjeta de un shot se actualizan solas cuando termina cualquier descarga o subida de ese shot, aunque falle o se cancele, también lo que bajás o subís con el FileManager dentro del shot. (Studio only)
+- **Improved:** Shots users: las versiones de la tarjeta de un shot se actualizan solas cuando termina cualquier descarga o subida de ese shot, aunque falle o se cancele, también lo que bajás o subís con el FileManager dentro del shot. (Client only)
+- **Improved:** si otra transferencia está usando la carpeta de un shot, la descarga automática lo deja para la vuelta siguiente, y las descargas de Flow y la subida del MOV a Flow te avisan en vez de pisar archivos a medio escribir.
+- **Improved:** Shots users: el FileManager y el Retry del tab QUEUE ya no largan una descarga, subida, copia, movida o borrado sobre un archivo que otra transferencia está usando: te avisan cuál es y qué lo está usando. Lo demás de esa misma carpeta se sigue encolando, así que podés ir subiendo archivos de a uno mientras sube el resto. (Studio only)
+- **Improved:** Shots users: el FileManager y el Retry del tab QUEUE ya no largan una descarga, subida, copia, movida o borrado sobre un archivo que otra transferencia está usando: te avisan cuál es y qué lo está usando. Lo demás de esa misma carpeta se sigue encolando, así que podés ir subiendo archivos de a uno mientras sube el resto. (Client only)
+- **Improved:** si la conexión falla al buscar o bajar una actualización, PipeSync espera y vuelve a probar solo hasta tres veces.
+- **Fixed:** en la tarjeta del shot, una versión v000 local o en Wasabi ahora sale en rojo cuando Flow ya tiene una versión más alta, y la de Flow en verde.
+- **Fixed:** si a esta Mac le falta la carpeta local de proyectos, Download Versions from Flow te dice que la configures en SETTINGS en vez de fallar con un error sin ruta, y en cuanto la ponés ya podés bajar sin reiniciar PipeSync. (macOS only)
+- **Fixed:** Admins and producers: cerrar el aviso de cambios en las playlists con Dismiss o con la cruz ya no trae PipeSync al frente: seguís en la app en la que estabas. (Studio, macOS only)
+- **Fixed:** Admins and producers: cerrar el aviso de cambios en las playlists con Dismiss o con la cruz ya no trae PipeSync al frente: seguís en la app en la que estabas. (Client, macOS only)
+- **Fixed:** Shots users: en el tab QUEUE, un path largo ya no se escribe encima de las columnas Size y Progress: si no entra, se abrevia por el medio y deja a la vista el shot y el número de cuadro, y al pasar el mouse ves el path completo. (Studio only)
+- **Fixed:** Shots users: en el tab QUEUE, un path largo ya no se escribe encima de las columnas Size y Progress: si no entra, se abrevia por el medio y deja a la vista el shot y el número de cuadro, y al pasar el mouse ves el path completo. (Client only)
+- **Fixed:** Auto downloaders: las descargas automáticas ya no abren el cartel «Wasabi access denied» por proyectos en los que no trabajás: los NKS y los assets se bajan solo de tus proyectos, y lo que Wasabi no deja bajar se ve arriba de Auto Download & Upload en SETTINGS, con Details para ver el error. (Studio only)
+- **Fixed:** Auto downloaders: las descargas automáticas ya no abren el cartel «Wasabi access denied» por proyectos en los que no trabajás: los NKS y los assets se bajan solo de tus proyectos, y lo que Wasabi no deja bajar se ve arriba de Auto Download & Upload en SETTINGS, con Details para ver el error. (Client only)
+- **Fixed:** Shots users: cancelar una subida o una descarga en el tab QUEUE ahora la frena de verdad, y una subida ya no borra de Wasabi los archivos que ya estaban aunque la hayas lanzado con Overwrite existing. (Studio only)
+- **Fixed:** Shots users: cancelar una subida o una descarga en el tab QUEUE ahora la frena de verdad, y una subida ya no borra de Wasabi los archivos que ya estaban aunque la hayas lanzado con Overwrite existing. (Client only)
+- **Fixed:** Shots users: la pausa del tab QUEUE ahora frena también las descargas de archivos chicos, que antes seguían bajando aunque la cola dijera Paused. (Studio only)
+- **Fixed:** Shots users: la pausa del tab QUEUE ahora frena también las descargas de archivos chicos, que antes seguían bajando aunque la cola dijera Paused. (Client only)
+- **Fixed:** Shots users: la tarjeta de un shot ya no muestra como local una versión cuya carpeta está vacía, como la que queda si cancelás una descarga antes de que baje el primer archivo. (Studio only)
+- **Fixed:** Shots users: la tarjeta de un shot ya no muestra como local una versión cuya carpeta está vacía, como la que queda si cancelás una descarga antes de que baje el primer archivo. (Client only)
+- **Fixed:** las personas con tilde o eñe en el nombre reciben el acceso a sus shots cuando se les asigna una task desde una Mac; antes les aparecía «Wasabi access denied» al abrirlos. (macOS only)
+
+## v1.029
 
 - **New:** En las tarjetas de shots, un click en la descripción de una task la abre completa en una ventana aparte que podés mover, leer mientras trabajás y copiar.
 - **New:** Reviewers: en el tab REVIEW, cada task tiene un botón de descarga junto a EXR Publish (o Publish): un click baja la última versión publicada a la carpeta de la task, y Shift+Click abre la lista de versiones para elegir cuáles bajar. (Studio only)
