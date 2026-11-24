@@ -1,6 +1,36 @@
 # What's new in LGA PipeSync
 
-## v1.030 (2026-11-17)
+## v1.031 (2026-11-24)
+
+- **New:** Production editors: en PROD, el botón Fix shot status (al lado de Undo) revisa los shots que estás viendo y te propone el estado que les corresponde según sus tasks; antes de escribir en Flow te muestra los cambios, te avisa de lo delicado (como un shot aprobado con la comp sin aprobar o tasks que no se usaron) y te deja elegir cuando shot y task no coinciden. Se deshace con Undo. (Studio only)
+- **New:** Production editors: en PROD, el botón Fix shot status (al lado de Undo) revisa los shots que estás viendo y te propone el estado que les corresponde según sus tasks; antes de escribir en Flow te muestra los cambios, te avisa de lo delicado (como un shot aprobado con la comp sin aprobar o tasks que no se usaron) y te deja elegir cuando shot y task no coinciden. Se deshace con Undo. (Client only)
+- **New:** Production readers: en PROD, con el botón Vendor report armás para un vendor un PDF y un Excel con los cambios de estado y las notas (con sus imágenes) de sus shots, separados por episodio, y elegís qué sale antes de exportar; el siguiente reporte puede arrancar justo donde terminó el anterior, con fecha y hora. (Client only)
+- **New:** cuando subís un shot con el botón Upload de la tarjeta, abajo a la derecha aparece «Publish uploaded» apenas termina de subir el publish de cada task: recién ahí el reviewer ya lo puede bajar, así que es el momento de avisarle. El resto del shot sigue subiendo, y el aviso queda hasta que lo cerrás.
+- **New:** Coordinators and admins: si en Flow hay dos shots con el mismo nombre, un aviso te muestra cuáles son y con Open in Flow abrís los dos, así elegís cuál borrar o renombrar. (Studio only)
+- **New:** Reviewers: desde PROD, desde el INBOX y desde una versión en el detalle de una playlist, con click derecho → Show in Review tab, se abre la tarjeta del shot en REVIEW aunque tus filtros la escondan; una barra arriba te avisa y con Back to filtered view volvés a tu vista, con los filtros como estaban. (Studio only)
+- **New:** Playlist users: en el detalle de una playlist, cada thumbnail muestra un número violeta con los comentarios nuevos de otros sobre esa versión, así encontrás enseguida dónde hay algo para leer; se va apenas la elegís. (Studio only)
+- **New:** Playlist users: en el detalle de una playlist, cada thumbnail muestra un número violeta con los comentarios nuevos de otros sobre esa versión, así encontrás enseguida dónde hay algo para leer; se va apenas la elegís. (Client only)
+- **New:** en FileManagerS3, Priority Download y Priority Upload: con click derecho, con Ctrl+Shift+← / Ctrl+Shift+→, o con Shift+click en las flechas de Download y Upload, lo que elegiste pasa adelante de todo lo que ya estaba en la cola.
+- **New:** Coordinators: en PROJECTS > Users & Access ahora podés usar Sync Wasabi policies y, desde el menú de cada persona, Revoke Wasabi policy…, sin esperar a un administrador. (Studio only)
+- **New:** cuando una task DMP tiene dos entregas con nombre propio (por ejemplo «algo» y «otraCosa»), la tarjeta del shot muestra una fila Review y una Publish para cada una, cada entrega se compara solo con sus versiones (Project no entra), y el botón de subir a Flow encuentra el MOV de esa entrega. Lo ves aunque no tengas nada en tu disco.
+- **Improved:** al subir un shot con Upload, los cachés y los intermedios de PlateWorker (cache, las corridas a medio terminar y lo que se dio de baja en cada workflow o proyecto) quedan afuera, así que la subida ya no carga cientos de GB que nadie usa. Para subir alguna de esas carpetas igual, elegila y subila a mano.
+- **Improved:** en todos los calendarios (filtro de fechas de PROD, fechas de una task, Deadline de STATS, milestones del Gantt, From y To del Vendor report y Time off de Edit user), el día que se puede elegir se resalta al pasar el mouse y muestra la manito; los que no se pueden elegir no.
+- **Improved:** en el INBOX, el click derecho sobre un cambio de estado ahora también abre las notas de la task (View notes and feedback), el shot o la task en Flow y la carpeta de la task en tu disco.
+- **Improved:** el botón Upload de la tarjeta del shot sube primero los proyectos, después publish, review y al final los prerenders y el resto, así lo que el supervisor necesita llega antes a Wasabi.
+- **Improved:** Admins and producers: el aviso de cambios en las playlists ya no te muestra lo que hiciste vos: tus comentarios, las versiones que agregaste, tus aprobaciones y las playlists que creaste quedan afuera; solo ves lo que hicieron los demás. (Studio only)
+- **Improved:** Admins and producers: el aviso de cambios en las playlists ya no te muestra lo que hiciste vos: tus comentarios, las versiones que agregaste, tus aprobaciones y las playlists que creaste quedan afuera; solo ves lo que hicieron los demás. (Client only)
+- **Fixed:** los feriados que rigen solo en la Ciudad de Buenos Aires (como el martes 10 de noviembre por la visita del papa) ya cuentan como feriado: no aparecen como horas faltantes en Stats, Log time ni el registro del equipo, y los calendarios y el Gantt los saltean.
+- **Fixed:** Team time users: en el registro del equipo, cuando hoy es feriado el día sale libre en vez de «en curso». (Studio only)
+- **Fixed:** en el filtro de fechas de PROD y en las fechas de una task, clickear un día gris del mes anterior o del siguiente elige esa fecha; antes elegía el mismo número del mes que estabas mirando.
+- **Fixed:** Project managers: en PROJECTS, los códigos de Vendor codes ya no aparecen corridos hacia abajo y cortados al abrir la app. (Studio only)
+- **Fixed:** Project managers: en PROJECTS, los códigos de Vendor codes ya no aparecen corridos hacia abajo y cortados al abrir la app. (Client only)
+- **Fixed:** si en Flow hay dos shots con el mismo nombre, el sync ya no falla entero: sigue con el resto.
+- **Fixed:** Playlist users: el tab PLAYLIST muestra las versiones en el mismo orden que la playlist en Flow, y si alguien la reordena allá, PipeSync toma el orden nuevo en el sync siguiente. (Studio only)
+- **Fixed:** Playlist users: el tab PLAYLIST muestra las versiones en el mismo orden que la playlist en Flow, y si alguien la reordena allá, PipeSync toma el orden nuevo en el sync siguiente. (Client only)
+- **Fixed:** en SHOTS y REVIEW, cuando le cambiás el estado a una task (desde PipeSync o desde Nuke Studio) y el shot ya no entra en el filtro de estados, la tarjeta se va sola a los 5 segundos y las demás se reacomodan, sin tener que apretar refresh. Esos segundos te dejan deshacer el cambio si fue sin querer.
+- **Fixed:** Coordinators, producers and admins: al asignar una task a alguien con muchos shots ya no aparece el aviso «Wasabi access not granted»: PipeSync le saca solo los shots ya entregados y, si igual no le entra, le abre otra policy, sin que nadie tenga que correr Sync Wasabi policies. (Studio only)
+
+## v1.030
 
 - **New:** Tools users: en LGA Updates del tab TOOLS aparece LGA GateBouncer, el firewall de LGA para Windows: lo instalás y lo actualizás desde ahí. (Studio, Windows only)
 - **New:** Tools users: en LGA Updates del tab TOOLS aparece LGA GateBouncer, el firewall de LGA para Windows: lo instalás y lo actualizás desde ahí. (Client, Windows only)
